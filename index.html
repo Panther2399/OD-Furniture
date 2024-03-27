@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>OD OFFICE FURNITURES PVT. LTD. </title>
+		<style>
+        .logo-scroller {
+            overflow: hidden;
+            white-space: nowrap;
+            width: max-content;
+            
+        }
+
+        .logo-scroller img {
+            max-width: 100px; /* Adjust the max-width as needed */
+            margin: 0 20px; /* Adjust the margin between logos */
+            animation: scroll-left 5s linear infinite;
+        }
+
+         @keyframes icon-scroller {
+  100% {
+    transform: translateX(calc(var(--scroller-size)*-0.5));
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --scroller-size: 800vw;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    --scroller-size: 1000vw;
+  }
+  .scroller-img {
+    max-width: 130px;
+    max-height: 30px;
+  }
+}
+@media (max-width: 500px) {
+  :root {
+    --scroller-size: 1400vw;
+  }
+}
+
+    </style>
+	</head>
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">OD Office<span>.</span></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarsFurni">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="active" class="nav-item "><a class="nav-link" href="index.html">Home</a></li>
+						<li><a class="nav-link" href="shop.html">Shop</a></li>
+						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- End Header/Navigation -->
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">                       
+								<h1>Modern Furniture <span clsas="d-block">Solutions Hub</span></h1>
+								<p class="mb-4">Transforming Spaces with Quality Furniture: Comfort, Style, and Reliability Delivered Straight to You.</p>
+								<p><a href="shop.html" class="btn btn-secondary me-2">Shop Now</a></p>
+							</div>
+						</div>
+<style>
+    .hero-img-wrap img {
+        transition: opacity 0.5s ease-in-out; /* Define the transition effect */
+    }
+</style>
+
+<div class="col-lg-7">
+    <div class="hero-img-wrap">
+        <img id="imageSlider" class="img-fluid" src="images/product-1.png">
+    </div>
+</div>
+
+<script>
+    var images = [
+        "images/Furniture/Executive series/Galaxy 119.png",
+        "images/Furniture/Sofa series/KS 10.png",
+        "images/product-1.png",
+        "images/product-2.png",
+        // Add more image URLs here
+    ];
+
+    var index = 0;
+
+    function changeImage() {
+        var image = document.getElementById('imageSlider');
+        image.style.opacity = 0; // Set opacity to 0 to fade out
+        setTimeout(function() {
+            image.src = images[index];
+            image.style.opacity = 1; // Set opacity to 1 to fade in
+            index = (index + 1) % images.length;
+        }, 500); // Wait for 500ms before changing the image (duration of transition)
+    }
+
+    setInterval(changeImage, 3000);
+</script>
+
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+		<!-- Start Product Section -->
+		<div class="product-section" id="craftedwith">
+			<div class="container">
+				<div class="row justify-content-center">
+
+					<!-- Start Column 1 -->
+					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0" style="width: 100%;">
+    <h2 class="mb-4 section-title">Crafted with excellent material.</h2>
+    <p class="mb-4">Elevate your spaces with our meticulously crafted furniture solutions. From Corporate Modular Workstations to stylish Sofas, we offer quality and comfort tailored to your needs. Experience seamless finishes and timeless designs, delivered promptly to your doorstep.</p>
+    <p><a href="about.html" class="btn">Explore</a></p>
+</div>
+
+					<!-- End Column 1 -->
+					</div>
+					<br>
+					<br>
+					<div class="row" style="background-color: #ffffff; border-radius: 15px;">
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="shop.html">
+							<img src="images/Furniture/Executive series/Galaxy 119.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Executive Series</h3>
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="shop.html">
+							<img src="images/Furniture/Net series/Star 201.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Net Series</h3>
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 3 -->
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="shop.html">
+							<img src="images/Furniture/Work station series/Matrix 310.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Work station series</h3>
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div>
+					<!-- End Column 4 -->
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="shop.html">
+							<img src="images/Furniture/Institutional series/SCL 400.png" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Institutional series</h3>					
+							<span class="icon-cross">
+								<img src="images/cross.svg" class="img-fluid">
+							</span>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+				</div>
+			</div>
+		</div>
+		<!-- End Product Section -->
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section" id="why-choose-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6">
+						<h2 class="section-title">Why Choose Us</h2>
+						<p>At OD Office Furnitures Pvt. Ltd., we stand out as your ultimate furniture partner for several compelling reasons:</p>
+						<div class="row my-5">
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/achievement-svgrepo-com.svg" alt="Image" class="imf-fluid" style="max-width: 50px; max-height: 50px;">
+									</div>
+									<h3>Craftsmanship Excellence</h3>
+									<p>Our products reflect meticulous craftsmanship, ensuring superior quality and aesthetics in every piece.</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/comfortable-easy-emoji-svgrepo-com.svg" alt="Image" class="imf-fluid" style="max-width: 50px; max-height: 50px;">
+									</div>
+									<h3>Comfort &amp; Durability</h3>
+									<p>With a focus on comfort and durability, our furniture is designed to enhance your spaces and withstand the test of time.</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/price-tag-rupee-svgrepo-com.svg" alt="Image" class="imf-fluid" style="max-width: 50px; max-height: 50px;">
+									</div>
+									<h3>Extensive Range</h3>
+									<p>From corporate workstations to versatile school furniture and elegant sofas, our diverse range caters to all your furnishing needs.</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/bag.svg" alt="Image" class="imf-fluid" style="max-width: 50px; max-height: 50px;">
+									</div>
+									<h3>Competitive Pricing</h3>
+									<p>Enjoy premium quality at competitive prices, making our products accessible to a wide range of customers.</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="images/government-svgrepo-com.svg" alt="Image" class="imf-fluid" style="max-width: 50px; max-height: 50px;">
+									</div>
+									<h3>Government Approval</h3>
+									<p>As a trusted vendor on the government portal GEM, we offer reliability and accountability in all our transactions.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="images/whyus12.png" alt="Image" class="img-fluid" style="max-width: 100%; max-height: 100%;">
+						</div>
+					</div>				
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+		<!-- Start Popular Product -->
+		<div class="popular-product" id="Clients">
+			<div class="container">
+				<div class="row">
+						<div class="row">
+					<div class="col-lg-7 mx-auto text-center">
+						<h2 class="section-title">Our Clients</h2>
+					</div>
+				</div>
+				<div class="row" style="background-color: #ffffff; border-radius: 15px;">
+					<ul class="custom-photo-list">
+  			<img src="images/Clients/Client 1.jpeg" alt="Client 1 Logo">
+        <img src="images/Clients/Client 2.jpeg" alt="Client 2 Logo">
+        <img src="images/Clients/Client 3.jpeg" alt="Client 3 Logo">
+        <img src="images/Clients/Client 4.jpeg" alt="Client 4 Logo">
+        <img src="images/Clients/Client 5.jpeg" alt="Client 5 Logo">
+        <img src="images/Clients/Client 6.jpeg" alt="Client 6 Logo">
+        <img src="images/Clients/Client 7.jpeg" alt="Client 7 Logo">
+        <img src="images/Clients/Client 8.jpeg" alt="Client 8 Logo">
+        <img src="images/Clients/Client 9.jpeg" alt="Client 9 Logo">
+        <img src="images/Clients/Client 10.jpeg" alt="Client 10 Logo">
+        <img src="images/Clients/Client 11.jpeg" alt="Client 11 Logo">       
+      		</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Popular Product -->
+		<!-- Start Testimonial Slider -->
+		<div class="testimonial-section" id="testimonial">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 mx-auto text-center">
+						<h2 class="section-title">Testimonials</h2>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="testimonial-slider-wrap text-center">
+							<div id="testimonial-nav">
+								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+							</div>
+							<div class="testimonial-slider">							
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;Our office's new Corporate Modular Workstations and chairs from your company are superb! They're stylish, comfortable, and well-built. Highly recommended!&rdquo;</p>
+												</blockquote>
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="images/mayank.jpg" alt="Mayank Kushwaha" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Mayank Kushwaha</h3>
+													<!-- <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span> -->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;The School Furniture we purchased from you is fantastic! Durable, comfortable, and perfect for our students. Thanks for enhancing our learning spaces!&rdquo;</p>
+												</blockquote>
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="images/Pranjal.jpg" alt="Pranjal Srivastava" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Pranjal Srivastava</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div> 							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer-section">
+			<div class="container relative">		
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">OD OFFICE FURNITURES<span>.</span></a></div>
+						<p class="mb-4">We offers a diverse range of corporate workstations, school furniture, chairs, sofas, and storage systems with attractive designs and competitive prices. Find us on the GEM government site. Delivery within estimated time frames guaranteed.</p>
+						<ul class="list-unstyled custom-social">
+							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="about.html">About us</a></li>
+									<li><a href="shop.html">Shop</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#craftedwith">Crafted with..</a></li>
+									<li><a href="#Clients">Our Clients</a></li>
+									<li><a href="#testimonial">Testimonials</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="shop.html">Executive Series</a></li>
+									<li><a href="shop.html">Net Series</a></li>
+									<li><a href="shop.html">Work station series</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://www.linkedin.com/in/mayankkushwahaofficial/">Mayank Kushwaha</a> 
+            </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
